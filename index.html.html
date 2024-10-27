@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLTZ Energia Solar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="voltz-text">
+                <h1><span class="raio">⚡</span> VOLTZ Energia Solar</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#precos">Preços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="openModalBtn" class="cadastro-btn">Cadastrar</button>
+    </header>
+
+    <section id="solar-animation" class="solar-animation">
+        <canvas id="solarCanvas"></canvas>
+        <div class="info">
+            <h2>Energia solar para o seu futuro</h2>
+            <p>Transforme a sua casa ou empresa com energia renovável e sustentável.</p>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="content-wrapper">
+            <h2>Sobre a VOLTZ</h2>
+            <p>Na VOLTZ, oferecemos as melhores soluções em energia solar, permitindo que você aproveite o melhor da tecnologia de energia renovável, economizando e ajudando o meio ambiente.</p>
+        </div>
+    </section>
+
+    <section id="precos" class="precos">
+        <div class="content-wrapper">
+            <h2>Tabela de Preços</h2>
+            <p>Confira nossos pacotes que atendem residências e empresas de todos os portes:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pacote</th>
+                        <th>Preço</th>
+                        <th>Detalhes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pacote Básico</td>
+                        <td>R$ 1.000</td>
+                        <td>Ideal para residências com baixo consumo</td>
+                    </tr>
+                    <tr>
+                        <td>Pacote Médio</td>
+                        <td>R$ 3.000</td>
+                        <td>Perfeito para residências e pequenas empresas</td>
+                    </tr>
+                    <tr>
+                        <td>Pacote Empresarial</td>
+                        <td>R$ 5.000</td>
+                        <td>Empresas de médio porte</td>
+                    </tr>
+                    <tr>
+                        <td>Pacote Premium</td>
+                        <td>R$ 10.000</td>
+                        <td>Para grandes empresas e economia máxima</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Modal de Cadastro -->
+    <div id="modalCadastro" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cadastre-se</h2>
+            <form id="cadastroForm">
+                <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+                <input type="tel" id="celular" name="celular" placeholder="Celular" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <input type="text" id="complemento" name="complemento" placeholder="Complemento" required>
+                <button type="submit" class="submit-btn">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VOLTZ Energia Solar. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
